@@ -1,0 +1,51 @@
+<?php 
+echo form_open('Data/proses_input_data_mekanik','class="form-horizontal" role="form"');
+// echo form_hidden('id', $this->uri->segment(3));
+
+?>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card-box">
+            <h4 class="m-t-0 header-title"><b>Input Data Mekanik</b></h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="p-20">        
+                        <div class="form-group">
+                        <label class="col-md-2 control-label" for="exampleInputEmail1" >Nama Mekanik</label>
+                            <div class="col-md-10">
+                                <input type="text" name="nama_mekanik" class="form-control" id="exampleInputEmail1" value="" required="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        <label class="col-md-2 control-label" for="exampleInputEmail1">Alamat</label>
+                            <div class="col-md-10">
+                                <input type="text" name="alamat" class="form-control" id="exampleInputEmail1" value="" required="">
+                            </div>
+                         </div>
+                        <div class="form-group">
+                        <label class="col-md-2 control-label" for="exampleInputEmail1">No Telp</label>
+                            <div class="col-md-10">
+                                <input type="text" name="no_telp" class="form-control" id="exampleInputEmail1" value="" required="">
+                            </div>
+                         </div>
+                        
+                        
+                         <div class="form-group">
+                        <label class="col-md-2 control-label" for="exampleInputEmail1"></label>
+                            <div class="col-md-10">
+                                
+                                <button style="margin-top: 20px;" type="submit" name="btn-update" class="btn btn-custom waves-light waves-effect w-md">Submit</button>
+                                <a href="<?php echo site_url('Data/data_user_mekanik/');?>">
+                                    <button style="margin-top: 20px;" type="button"  class="btn btn-warning waves-effect waves-light">Back</button>
+                                </a>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+        </div> <!-- end card-box -->
+    </div><!-- end col -->
+</div>
+<?php echo form_close(); ?>
